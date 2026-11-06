@@ -708,6 +708,7 @@ A separate report, [microsoft/vscode#342961](https://github.com/microsoft/vscode
 
 ## Converting an existing plugin package to Agent Plugins 1.0
 
+
 When converting existing or legacy plugin packages to the standardized Agent Plugins format, follow this end-to-end checklist:
 
 1. **Manifest relocation and schema:**
