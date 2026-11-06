@@ -706,12 +706,8 @@ Do not assume that removing a prefix or replacing a tool name fixes every discov
 
 A separate report, [microsoft/vscode#342961](https://github.com/microsoft/vscode/issues/342961), describes tool search returning no results even when MCP tools are callable. If compatible tools still cannot be discovered, report the exact error, selected model, agent tool list, and environment rather than treating every discovery failure as an authentication problem.
 
-## Related resources
-
-* [Create and manage agent customizations](/docs/agent-customization/overview.md)
-* [Choose and configure an agent harness](/docs/agents/run/agent-harnesses.md)
-* [Agent customization concepts](/docs/agents/concepts/customization.md)
 ## Converting an existing plugin package to Agent Plugins 1.0
+
 
 When converting existing or legacy plugin packages to the standardized Agent Plugins format, follow this end-to-end checklist:
 
@@ -731,3 +727,10 @@ When converting existing or legacy plugin packages to the standardized Agent Plu
 6. **Subprocess stdout isolation for hooks:**
    - Hook scripts enforce a strict one-response JSON contract across the entire process tree.
    - Ensure child processes or dependency installers (e.g., `npm`, `pip`) do not output progress or diagnostics to `stdout`. Redirect all subprocess logs to `stderr` to avoid invalidating the hook JSON response.
+  
+     
+## Related resources
+
+* [Create and manage agent customizations](/docs/agent-customization/overview.md)
+* [Choose and configure an agent harness](/docs/agents/run/agent-harnesses.md)
+* [Agent customization concepts](/docs/agents/concepts/customization.md)
